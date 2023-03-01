@@ -1,0 +1,156 @@
+{
+  "customer": [
+    {
+      "firstname": "Divya",
+      "lastname": "Khapekar",
+      "email": "divya67@gmail.com",
+      "dob": "2016-05-10T18:30:00.000Z",
+      "phoneno": "0998976756",
+      "salary": "900000",
+      "gender": "female",
+      "account": "Salary Account",
+      "loan": "Home Loan",
+      "card": "Debit Card",
+      "insurance": "Life Insurance",
+      "id": 2
+    },
+    {
+      "firstname": "Deepak",
+      "lastname": "Naidu",
+      "email": "deepak@somaiya.edu",
+      "dob": "2017-07-17T18:30:00.000Z",
+      "phoneno": "9867234455",
+      "salary": "450000",
+      "gender": "male",
+      "account": "Current Account",
+      "loan": "Personal Loan",
+      "card": "Debit Card",
+      "insurance": "Health Insurance",
+      "id": 3
+    },
+    {
+      "firstname": "Rajas",
+      "lastname": "Khapekar",
+      "email": "rajas@gmail.com",
+      "dob": "2021-07-19T18:30:00.000Z",
+      "phoneno": "9867234455",
+      "salary": "9400000",
+      "gender": "male",
+      "account": "Saving Account",
+      "loan": "Car Loan",
+      "card": "Debit Card",
+      "insurance": "Life Insurance",
+      "id": 5
+    },
+    {
+      "firstname": "Sagar",
+      "lastname": "Pardeshi",
+      "email": "sagar87@gmail.com",
+      "dob": "2016-09-18T18:30:00.000Z",
+      "phoneno": "8789667788",
+      "salary": "89990",
+      "gender": "male",
+      "account": "Saving Account",
+      "loan": "Car Loan",
+      "card": "Credit Card",
+      "insurance": "Cyber Insurance",
+      "id": 6
+    },
+    {
+      "firstname": "Sakshi",
+      "lastname": "Dhabekar",
+      "email": "sakshi90@gmail.com",
+      "dob": "2016-05-27T18:30:00.000Z",
+      "phoneno": "9898765645",
+      "salary": "566688",
+      "gender": "female",
+      "account": "Current Account",
+      "loan": "Education Loan",
+      "card": "Debit Card",
+      "insurance": "Health Insurance",
+      "id": 7
+    },
+    {
+      "firstname": "abc ",
+      "lastname": "xyz",
+      "email": "abc@gmail.com",
+      "dob": "2020-05-10T18:30:00.000Z",
+      "phoneno": "8967452356",
+      "salary": "78568",
+      "gender": "male",
+      "account": "Salary Account",
+      "loan": "Home Loan",
+      "card": "Debit Card",
+      "insurance": "Cyber Insurance",
+      "id": 8
+    }
+  ],
+  "employeeList": [
+    {
+      "employeeName": "Seema Devi",
+      "mailid": "seema.devi@ext-crisil.com",
+      "dob": "1990-02-03T18:30:00.000Z",
+      "gender": "Female",
+      "designation": "Intern",
+      "id": 6
+    },
+    {
+      "employeeName": "Sagar Raj",
+      "mailid": "sagar.raj@ext-crisil.com",
+      "dob": "2000-08-19T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 7
+    },
+    {
+      "employeeName": "Deepak Naidu",
+      "mailid": "deepak.naidu@ext-crisil.com",
+      "dob": "2000-03-13T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 8
+    },
+    {
+      "employeeName": "Parmeet Sandhu",
+      "mailid": "parmeet.sandhu@ext-crisil.com",
+      "dob": "2001-02-15T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 9
+    },
+    {
+      "employeeName": "Divya Khapekar",
+      "mailid": "divya.khapekar@ext-crisil.com",
+      "dob": "2000-02-06T18:30:00.000Z",
+      "gender": "Female",
+      "designation": "Intern",
+      "id": 10
+    },
+    {
+      "employeeName": "Vaishnavi Mahale",
+      "mailid": "vaishnavi.mahale@ext-crisil.com",
+      "dob": "2001-03-21T18:30:00.000Z",
+      "gender": "Female",
+      "designation": "Interns",
+      "id": 11
+    },
+    {
+      "employeeName": "Manan Kataria",
+      "mailid": "manan.kataria@ext-crisil.com",
+      "dob": "1998-08-21T18:30:00.000Z",
+      "gender": "Male",
+      "designation": "Intern",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "fname": "Deepak",
+      "lname": "Naidu",
+      "email": "deepak@mail.com",
+      "phone": 9821662886,
+      "password": "deepak11",
+      "id": 1
+    }
+  ]
+}

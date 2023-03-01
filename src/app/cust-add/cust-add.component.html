@@ -1,0 +1,94 @@
+<div mat-dialog-title>
+    <h1>Customer Details</h1>
+</div>
+<form [formGroup]="custForm" (ngSubmit)="onFormSubmit()" >
+<div mat-dialog-content class="content">
+    <div class="cols">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstname">
+          </mat-form-field> &nbsp; &nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastname">
+          </mat-form-field>
+          </div>
+
+          <div class="cols">
+          <mat-form-field appearance="outline">
+            <mat-label>Email Id</mat-label>
+            <input matInput type="email" placeholder="abc@gmail.com" formControlName="email">
+          </mat-form-field>  &nbsp; &nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input matInput [matDatepicker]="picker" placeholder="MM/DD/YYYY" formControlName="dob">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint><br/> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          </div>
+          
+          <div class="cols">
+          <mat-form-field appearance="outline">
+            <mat-label>Phone No</mat-label>
+            <input matInput formControlName="phoneno">
+          </mat-form-field>  &nbsp; &nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>Salary</mat-label>
+            <input matInput formControlName="salary">
+          </mat-form-field>
+
+          </div>
+          <div class="cols">
+          <mat-radio-group aria-label="Select an option" formControlName="gender">
+            <mat-label><b>Gender</b></mat-label>
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+            <mat-radio-button value="others">Others</mat-radio-button>
+          </mat-radio-group>
+    </div>
+<br/>
+    <div class="cols">
+        <mat-form-field appearance="outline">
+            <mat-label>Account</mat-label>
+            <mat-select formControlName="account">
+              <mat-option *ngFor="let acc of accounts" [value]="acc">
+                {{acc}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> &nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>Loans</mat-label>
+            <mat-select formControlName="loan">
+              <mat-option *ngFor="let loan of loans" [value]="loan">
+                {{loan}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> 
+    </div>
+    <div class="cols">
+          <mat-form-field appearance="outline">
+            <mat-label>Insurance</mat-label>
+            <mat-select formControlName="insurance">
+              <mat-option *ngFor="let ins of insurance" [value]="ins">
+                {{ins}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field> &nbsp;
+          <mat-form-field appearance="outline">
+            <mat-label>Cards</mat-label>
+            <mat-select formControlName="card">
+              <mat-option *ngFor="let cd of cards" [value]="cd">
+                {{cd}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+    </div>
+    
+</div>
+<div mat-dialog-actions class="action">
+    <button mat-raised-button color="warn" type="button" [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button  type="submit">{{data ? 'Update' : 'Save Changes'}}</button>
+</div>
+
+</form>

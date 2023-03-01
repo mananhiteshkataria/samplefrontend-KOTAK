@@ -1,0 +1,10 @@
+.dashboard{
+    display: flex;
+    margin: auto;
+    padding: 0 4rem;
+    gap: 2rem;
+}
+.card{
+    width: 13rem;
+    /* border: 1px solid red; */
+}

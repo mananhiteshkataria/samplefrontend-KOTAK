@@ -1,0 +1,38 @@
+<!-- Header -->
+<app-log-head></app-log-head>
+<!-- Main Body -->
+<div>
+    <table class=" table border border-3 border border-dark table-bordered table table-hover" style="width: auto;">
+        <thead class="table-primary border border-3 border border-dark">
+            <tr>
+                <th><b>SERVICES</b></th>
+            </tr>
+        </thead>
+        <tbody class="table-warning border border-3 border border-dark">
+            <tr *ngFor="let ser of services">
+                <td>{{ser}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <app-child1 [service]="currentService" (newServiceEvent)="addService($event)"></app-child1>
+</div>
+
+<hr>
+
+<div>
+    <table class="table border border-3 border border-dark table-bordered table table-hover" style="width: auto;">
+        <thead class="table-primary border border-3 border border-dark">
+            <tr>
+                <th>OFFERS</th>
+            </tr>
+        </thead>
+        <tbody class="table-warning border border-3 border border-dark">
+            <tr *ngFor="let off of offers">
+                <td>{{off}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <app-child2 [offer]="currentOffer" (newOfferEvent)="addOffer($event)"></app-child2>
+</div>
+<!-- Footer -->
+<app-footer></app-footer>

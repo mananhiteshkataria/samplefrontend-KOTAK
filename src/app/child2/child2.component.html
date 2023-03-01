@@ -1,0 +1,11 @@
+<div class="child">
+
+    <!-- <h2>Add new Offer</h2> -->
+
+    <label for="offer-input">Add new Offer </label>
+    <div class="input-group mb-3">
+        <input type="text" id="offer-input" #newOffer aria-describedby="button-addon2">
+        <button (click)="addNewOffer(newOffer.value);" class="btn btn-warning">Add</button>
+    </div>
+
+</div>

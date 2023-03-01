@@ -1,0 +1,11 @@
+<div class="child">
+
+    <!-- <h2>Add New Services</h2> -->
+
+    <label for="service-input">Add new Service </label>
+    <div class="input-group mb-3">
+        <input type="text" id="service-input" #newService aria-describedby="button-addon2">
+        <button (click)="addNewService(newService.value);" class="btn btn-warning">Add</button>
+    </div>
+
+</div>

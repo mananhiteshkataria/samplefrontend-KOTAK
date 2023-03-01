@@ -1,0 +1,100 @@
+<!-- Header -->
+<app-log-head></app-log-head>
+
+<!-- info section -->
+<div id="locateus">
+    <h1 id="headinglocate">Locate us</h1>
+    <p id="paralocate">Find an ATM, Branch near you, get IFSC code or find out how
+        you can save a trip to your branch by checking our online facilites below</p>
+
+</div>
+<div id="branchloc">
+    <select id="statelist" class="form-select" (change)="changeState($any($event.target).value)">
+        <option value="" disabled selected hidden>Select State</option>
+        <option *ngFor="let count of stateList">{{count.name}}</option>
+    </select>
+    <select id="citylist" class="form-select" [(ngModel)]="selectedValue">
+        <option value="" disabled selected hidden>Select City</option>
+        <option *ngFor="let city of cities">{{city}}</option>
+    </select>
+</div>
+
+<!-- pincode section -->
+<h2 id="orhead">OR</h2>
+<div>
+    <div id="pincodesearch" class="container">
+        <div class="row">
+            <div></div>
+            <div>
+
+                <div class="searchBox">
+                    <input id="pc" class="form-control" type="text" [(ngModel)]="searchText"
+                        (keydown.enter)="filterItems()" placeholder="Search by pin code">
+                    <div *ngIf="filteredItems.length>0">
+                        <div id="listi" *ngFor="let item of filteredItems">
+                            <div id="branchname1">
+                                {{item.name}}
+                            </div>
+                            <div id="branchinfo1">
+                                {{item.address}}<br>
+                                {{item.contact}}<br>
+                                {{item.hours}}
+                                <hr>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--after enter is pressed event is passed to function -->
+<hr>
+
+<!-- city state section -->
+<div>
+    <div [style.visibility]="!showFlag ? 'hidden' : 'visible'" id="place">
+        <p>Locate us by selecting the state & city or entering your pin code.</p>
+    </div>
+    <!-- [style.visibility]="!showFlag ? 'hidden' : 'visible'" -->
+    <div [style.visibility]="!hide ? 'hidden' : 'visible'" class="results"
+        *ngIf="selectedValue=='Mumbai';else other_content">
+        <p id="branchname">Micro ATM - NEELAM SANJIVKUMAR SINGH</p>
+        <p id="branchinfo">ROOM NO2 MOHAN ZIPRIYA PATIL PIMPLEGHAR BHIWANDI SAVAROLI TRAF DUGAD BHIWANDI, MUMBAI,
+            MAHARASHTRA, 421302<br>
+            Phone No : 1860 266 2666<br>
+            Hours: Weekday Timing 11:00 AM To 21:00 PM</p>
+        <hr>
+        <p id="branchname">ATM - Thane – Ulhasnagar Offsite</p>
+        <p id="branchinfo">Shop No. 13 (S.U.L.), Ground Floor, Shiv Leela Arcade, No. 62, Bhatia Chowk, Thane,
+            Ulhasnagar 421004<br>
+            Phone No : 1860 266 2666<br>
+            Hours: 12:00 AM To 11:59 PM</p>
+    </div>
+</div>
+<div>
+    <!-- [style.visibility]="!showFlag ? 'hidden' : 'visible'" -->
+    <div [style.visibility]="!hide ? 'hidden' : 'visible'" class="results"
+        *ngIf="selectedValue=='Ahmadnagar';else other_content">
+        <p id="branchname">Micro ATM - BHUSHAN FASHION </p>
+        <p id="branchinfo">7198 Rajendra Harakchand Firodia Khist Galli,AHMEDNAGAR ,AHMEDNAGAR, MAHARASHTRA, 414001<br>
+            Phone No : 1860 266 2666<br>
+            Hours: Weekday Timing 11:00 AM To 21:00 PM</p>
+        <hr>
+    </div>
+</div>
+
+<div id="whitespace">
+
+</div>
+<ng-template #other_content>
+
+</ng-template>
+
+<!-- Footer -->
+<app-footer></app-footer>

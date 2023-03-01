@@ -1,0 +1,142 @@
+#locateus
+{
+    position: relative;
+    top: 130px;
+    height: 400px;   
+    background: url('src/assets/reach-us.jpg');
+}
+#headinglocate
+{
+    position: relative;
+    top: 110px;
+    padding-left: 50px;
+    font-size: 45px;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+}
+#listi
+{
+    list-style: none;
+}
+#paralocate
+{
+    margin-top: 120px;
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    font-size: 16px;
+    padding-left: 50px;
+}
+#buttonbook
+{
+    margin-top: 10px;
+    margin-left: 50px;
+    border-radius: 4px;
+    background: #ed4223;
+    border-color: #ed4223;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+#branchloc
+{
+    
+    position: relative;
+    top: 150px;
+}
+#statelist
+{
+    
+    width: 200px;
+    position: relative;
+    left: 200px;
+}
+#citylist
+{
+    
+    top: -37px;
+    width: 200px;
+    position: relative;
+    left: 450px;
+}
+#pincodesearch
+{
+    position: relative;
+    left: 350px;
+    top: -40px;
+    width: 400px;
+}
+#orhead
+{
+    position: relative;
+    margin-top: 80px;
+    left: 730px;
+    font-size: 20px;
+    color: #757575;
+}
+#whitespace
+{
+    height: 500px;
+}
+#branchname
+{
+    color: #ed4223;
+    margin-left: 50px;
+}
+#branchinfo
+{
+    color: #000;
+    margin-left: 50px;
+    
+}
+#branchname:hover
+{
+   color: #036;
+   cursor: pointer;
+}
+#xx
+{
+    position: relative;
+    
+    left: -700px;
+}
+#yy
+{
+    color: #000;
+}
+#branchname1
+{
+    color: #ed4223;
+    margin-left: -700px;
+    margin-top: 50px;
+}
+#branchinfo1
+{
+    color: #000;
+    margin-left: -700px;
+    margin-top: 10px;
+}
+#branchname1:hover
+{
+   color: #036;
+   cursor: pointer;
+}
+#pc
+{
+    margin-top: 5px;
+}
+#place
+{
+    color: #8799b1;
+    text-align: center;
+    font-size: 16px;
+}

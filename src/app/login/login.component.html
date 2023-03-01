@@ -1,0 +1,34 @@
+<app-log-head></app-log-head>
+<div class="container login-form">
+    <div class="login-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/8662/8662284.png" alt="error">
+    </div>
+    <div class="form-login">
+        <form [formGroup]="login" (ngSubmit)="logindata(login)" class="form-box">
+            <h3 style="font-size: 23px;">Login</h3>
+
+            <div class="form-group">
+                UserName: <input type="text" formControlName="fname" class="form-control mb-3 mt-3"
+                    placeholder="Enter your Name" />
+            </div>
+
+            <div class="form-group">
+                Password: <input type="password" formControlName="password" class="form-control mb-3 mt-3"
+                    placeholder="Enter Password" />
+            </div>
+
+            <span>Create New Account: <a routerLink="/register"
+                    style="color: #d9534f; text-decoration: none;font-weight: 500;">Signup</a></span>
+            <br />
+            <br />
+            <button type="submit" class="btn btn-danger">Login</button>
+
+        </form>
+    </div>
+
+    <!-- <div class="login-footer">
+    <app-footer></app-footer>-->
+</div>
+<footer style="bottom: 0; position: absolute; width: 100%;">
+    <app-log-footer></app-log-footer>
+</footer>
